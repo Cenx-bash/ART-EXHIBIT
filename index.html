@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ART EXHIBIT</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header>
+      <nav class="navbar">
+        <div class="nav-brand">
+          <div class="logo-container">
+            <div class="logo-icon">
+              <i class="fas fa-palette"></i>
+            </div>
+            <div class="logo-text">
+              <h1>ART EXHIBIT</h1>
+              <span>Art Gallery by ZT13</span>
+            </div>
+          </div>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#categories" class="nav-link">Categories</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#artists" class="nav-link">Artists</a></li>
+          <li><a href="#exhibitions" class="nav-link">Exhibitions</a></li>
+          <li><a href="#contact" class="nav-link">Visit</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="theme-toggle" id="themeToggle">
+            <i class="fas fa-moon"></i>
+          </button>
+          <button class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <h1 class="hero-title">The Art of Being Filipino</h1>
+        <p class="hero-subtitle">
+          Pagtawag upang bumuo ng kurso patungo sa Nakatagong Pamana ng
+          Filipino.
+        </p>
+        <p class="hero-description">
+          Accompany the Filipino's True Identity with Decolonized Arts!
+        </p>
+        <div class="hero-actions">
+          <button class="cta-button primary" id="exploreGallery">
+            Explore Gallery
+          </button>
+          <button class="cta-button secondary" id="viewExhibitions">
+            View Exhibitions
+          </button>
+        </div>
+        <div class="scroll-indicator">
+          <span>Scroll Down</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+      </div>
+      <div class="hero-background">
+        <div class="texture-overlay"></div>
+        <div class="geometric-pattern"></div>
+        <div class="floating-elements">
+          <div class="floating-element element-1"></div>
+          <div class="floating-element element-2"></div>
+          <div class="floating-element element-3"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories" id="categories">
+      <div class="section-header">
+        <h2>Art Categories</h2>
+        <p>Explore our diverse collection across four major art disciplines</p>
+      </div>
+      <div class="categories-grid">
+        <div class="category-card" data-category="visual">
+          <div class="category-icon">
+            <i class="fas fa-palette"></i>
+          </div>
+          <h3>Visual Arts</h3>
+          <p>
+            Paintings, sculptures, photography, and installations that captivate
+            the senses and inspire the imagination.
+          </p>
+          <span class="artworks-count">128 Artworks</span>
+        </div>
+        <div class="category-card" data-category="literary">
+          <div class="category-icon">
+            <i class="fas fa-pen-nib"></i>
+          </div>
+          <h3>Literary Arts</h3>
+          <p>
+            Poetry, prose, and written expressions that weave stories and evoke
+            emotions through the power of words.
+          </p>
+          <span class="artworks-count">76 Works</span>
+        </div>
+        <div class="category-card" data-category="applied">
+          <div class="category-icon">
+            <i class="fas fa-gem"></i>
+          </div>
+          <h3>Applied Arts</h3>
+          <p>
+            Functional art pieces including ceramics, textiles, jewelry, and
+            design objects that blend beauty with purpose.
+          </p>
+          <span class="artworks-count">94 Pieces</span>
+        </div>
+        <div class="category-card" data-category="performance">
+          <div class="category-icon">
+            <i class="fas fa-theater-masks"></i>
+          </div>
+          <h3>Performance Arts</h3>
+          <p>
+            Dance, theater, music, and live performances that create ephemeral
+            moments of artistic expression.
+          </p>
+          <span class="artworks-count">42 Performances</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+      <div class="about-container">
+        <div class="about-content">
+          <h2>Designing The Extraordinary!</h2>
+          <p>
+            We believe in pushing the boundaries of artistic expression and
+            creating spaces where creativity knows no limits.
+          </p>
+          <div class="about-stats">
+            <div class="about-stat">
+              <span class="number">200+</span>
+              <span class="label">Exhibitions</span>
+            </div>
+            <div class="about-stat">
+              <span class="number">50+</span>
+              <span class="label">Awards</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual">
+          <div class="texture-element"></div>
+          <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Artworks Section -->
+    <section class="featured-artworks" id="gallery">
+      <div class="section-header">
+        <h2>Featured Artworks</h2>
+        <p>Curated selection of exceptional pieces from our collection</p>
+      </div>
+      <div class="gallery-container">
+        <div class="gallery-filters">
+          <button class="filter-btn active" data-filter="all">All Works</button>
+          <button class="filter-btn" data-filter="visual">Visual Arts</button>
+          <button class="filter-btn" data-filter="literary">
+            Literary Arts
+          </button>
+          <button class="filter-btn" data-filter="applied">Applied Arts</button>
+          <button class="filter-btn" data-filter="performance">
+            Performance Arts
+          </button>
+        </div>
+        <div class="artworks-scroll-container">
+          <div class="artworks-scroll-track" id="artworksScrollTrack">
+            <!-- Artworks will be loaded here dynamically and duplicated for seamless loop -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Connected Featured Artists Section -->
+    <section class="connected-artists" id="artists">
+      <div class="section-header">
+        <h2>Featured Artists</h2>
+        <p>Meet the creative minds behind our featured artworks</p>
+      </div>
+      <div class="artists-scroll-container">
+        <div class="artists-scroll-track" id="artistsScrollTrack">
+          <!-- Artists will be loaded here dynamically and duplicated for seamless loop -->
+        </div>
+      </div>
+      <div class="scroll-indicator artists-scroll-indicator">
+        <span> < Scroll to explore artists > </span
+      </div>
+    </section>
+
+    <!-- Exhibitions Section -->
+    <section class="exhibitions" id="exhibitions">
+      <div class="section-header">
+        <h2>Current Exhibitions</h2>
+        <p>Experience our latest curated shows and installations</p>
+      </div>
+      <div class="exhibitions-grid">
+        <div class="exhibition-card">
+          <div class="exhibition-image">
+            <div class="exhibition-badge">Current</div>
+          </div>
+          <div class="exhibition-info">
+            <h3>WebSite Gallery</h3>
+            <p class="exhibition-date">Through November 24, 2025</p>
+            <p class="exhibition-description">
+              Enjoy the digital Art Gallery created by ZT13
+            </p>
+            <button class="exhibition-btn">View Details</button>
+          </div>
+        </div>
+        <div class="exhibition-card">
+          <div class="exhibition-image">
+            <div class="exhibition-badge">Upcoming</div>
+          </div>
+          <div class="exhibition-info">
+            <h3>Roblox Art Gallery</h3>
+            <p class="exhibition-date">November 24 - November 26, 2025</p>
+            <p class="exhibition-description">
+              Tour around in the world of roblox WHERE ART MEETS SOUL
+            </p>
+            <button class="exhibition-btn">Learn More</button>
+          </div>
+        </div>
+        <div class="exhibition-card">
+          <div class="exhibition-image">
+            <div class="exhibition-badge">Ongoing</div>
+          </div>
+          <div class="exhibition-info">
+            <h3>Booth Stand</h3>
+            <p class="exhibition-date">Through November 24 - 26, 2025</p>
+            <p class="exhibition-description">
+              Come and visit as the xaiver building locted at 1st floor
+            </p>
+            <button class="exhibition-btn">Explore</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="section-header">
+        <h2>Visit Our Gallery</h2>
+        <p>Experience art in person at our premier exhibition space</p>
+      </div>
+      <div class="contact-container">
+        <div class="gallery-scroll-container">
+          <div class="gallery-scroll-track" id="galleryScrollTrack">
+            <!-- Gallery info cards will be loaded here -->
+          </div>
+        </div>
+      </div>
+     <!---< div class="scroll-indicator gallery-scroll-indicator">
+        <span> < Scroll to explore gallery > </span>
+      </div> --> 
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h2>The Art of Being Filipino</h2>
+          <p>
+            Celebrating artistic excellence across all disciplines since 2010.
+          </p>
+          <div class="footer-contact">
+            <p><strong>Ad Gigaci, Concilion</strong></p>
+            <p>Sci Digital & Co., Ltd.</p>
+            <p>Tel: +39 (0) 2 1 4</p>
+            <p>www.sci.com/adigaci</p>
+          </div>
+        </div>
+        <div class="footer-links">
+          <div class="link-group">
+            <h4>Explore</h4>
+            <a href="#categories">Categories</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#artists">Artists</a>
+            <a href="#exhibitions">Exhibitions</a>
+          </div>
+          <div class="link-group">
+            <h4>Visit</h4>
+            <a href="#contact">Hours & Admission</a>
+            <a href="#">Directions</a>
+            <a href="#">Group Tours</a>
+            <a href="#">Accessibility</a>
+          </div>
+        </div>
+        <div class="footer-newsletter">
+          <h4>Stay Connected</h4>
+          <p>
+            Subscribe to our newsletter for updates on new acquisitions and
+            exhibitions.
+          </p>
+          <div class="newsletter-form">
+            <input type="email" placeholder="Your email address" />
+            <button type="submit">Subscribe</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-social">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p>&copy; 2025 The Art of Being Filipino. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Artwork Modal -->
+    <div class="modal" id="artworkModal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div class="modal-body">
+          <div class="modal-image">
+            <div id="modalArtwork"></div>
+          </div>
+          <div class="modal-info">
+            <h2 id="modalTitle"></h2>
+            <p class="artist" id="modalArtist"></p>
+            <p class="category" id="modalCategory"></p>
+            <p class="description" id="modalDescription"></p>
+            <div class="artwork-details">
+              <div class="detail">
+                <span class="label">Medium:</span>
+                <span id="modalMedium"></span>
+              </div>
+              <div class="detail">
+                <span class="label">Dimensions:</span>
+                <span id="modalDimensions"></span>
+              </div>
+              <div class="detail">
+                <span class="label">Year:</span>
+                <span id="modalYear"></span>
+              </div>
+            </div>
+            <div class="modal-actions">
+              <button class="btn-favorite">
+                <i class="far fa-heart"></i> Save to Collection
+              </button>
+              <button class="btn-inquire">
+                <i class="fas fa-info-circle"></i> Inquire
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+      <div class="loading-content">
+        <div class="loading-spinner">
+          <div class="spinner"></div>
+        </div>
+        <p>Loading Art Collection</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
